@@ -34,7 +34,7 @@ var simpleModal = (function(){
     /* public methods */
     modalOpen: function(modal, text){
       if (text){
-        $('.'+modal).find(".simpleModalWindow").append( "<p>" + text + "</p>");
+        $('.'+modal).find(".simpleModalWindowText").html( "<p>" + text + "</p>");
       }
       $('.'+modal).slideDown();
       overlayOpen();
@@ -43,15 +43,5 @@ var simpleModal = (function(){
       $(".simpleModalWindowWrap").slideUp();
       overlayClose();
     },
-
   }
 })();
-
-simpleModal.init();
-
-simpleModal.modalOpen("modal2");
-simpleModal.modalClose("modal2");
-
-
-simpleModal.modalOpen("modal3", "my text");
-//simpleModal.modalClose("modal3");

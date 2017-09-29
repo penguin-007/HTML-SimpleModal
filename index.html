@@ -51,6 +51,7 @@
       <div class="simpleModalCell">
         <div class="simpleModalWindow">
           <span class="simpleModalWindowClose"></span>
+          <div class="simpleModalWindowText"></div>
         </div>
       </div>
     </div>
@@ -63,6 +64,16 @@
   <!-- js -->
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="simple_modal.js"></script>
+
+  <script> 
+  simpleModal.init();
+
+  simpleModal.modalOpen("modal2");
+  simpleModal.modalClose("modal2");
+
+  simpleModal.modalOpen("modal3", "my text");
+  //simpleModal.modalClose("modal3");
+  </script>
 
 </body>
 </html>
