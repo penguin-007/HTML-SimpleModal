@@ -52,18 +52,28 @@ simpleModal.init();
 
 
 
+Вызов окна:
+------
+```
+<span data-simple_modal="modal1">modal1</span>
+```
+
+
+
 Методы:
 ------
 
-* Открывает модальное окно
+# Открывает модальное окно
 ```
 simpleModal.modalOpen( "id", "content" );
 ```
 **id**  - (обязательный) идентефикатор модального окна
+
 **content**  - (не обязательный) текст или блок html кода, который будет добавлен в блок "simpleModalWindowText"
 
 
-* Закрывает модальное окно
+
+# Закрывает модальное окно
 ```
 simpleModal.modalClose( "id" );
 ```
