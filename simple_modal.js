@@ -34,7 +34,7 @@ var simpleModal = (function(){
     /* public methods */
     modalOpen: function(modal, text){
       if (text){
-        $('.'+modal).find(".simpleModalWindowText").html( "<p>" + text + "</p>");
+        $('.'+modal).find(".simpleModalWindowText").html( text );
       }
       $('.'+modal).slideDown();
       overlayOpen();
